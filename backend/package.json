@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./src/app.ts",
-    "prisma-setup": "prisma migrate && prisma generate"
+    "prisma-setup": "prisma migrate dev && prisma generate"
   },
   "keywords": [],
   "author": "",
