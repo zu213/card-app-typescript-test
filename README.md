@@ -24,7 +24,7 @@ Follow the instructions below to run the back end and the front end.
 Then make changes to:
 - Add a dark mode. Create a settings dialog to set it - and change the styling to render a dark mode. Consider how the current setting is passed to the components (and describe it in your covering email)
 - Add a scheduled date to the cards. This involves adding a column in the database, changing the backend service and changing the frontend card entry and display components
-- Add tests to the backend. There are some clues [here](https://www.fastify.io/docs/latest/Guides/Testing/)
+- Add tests to the backend. There are some clues [here](https://www.fastify.io/docs/latest/Guides/Testing/) and [here](https://jestjs.io/docs/using-matchers).
 
 If you feel constrained by time (which is totally fine!), prioritize quality over quantity.
 
