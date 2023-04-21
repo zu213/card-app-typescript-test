@@ -10,6 +10,8 @@ NodeJS - if you don't already have it installed, check out [nvm](https://github.
 ### Development set-up
 If you don't have a favorite editor we highly recommend [VSCode](https://code.visualstudio.com).
 
+By default there is no syntax highlighting for `.prisma` files. Consider installing the [Prisma extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma).
+
 # Instruction to candidates
 
 Your assignment is to improve this application. At the moment the application is simple and can only create and remove todos.
