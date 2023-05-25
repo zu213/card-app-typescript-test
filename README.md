@@ -61,7 +61,13 @@ npm install
 
 npm run prisma-setup
 
-npm run start
+npm start
+```
+
+To run the tests:
+
+```bash
+npm run test
 ```
 
 ## Front End
