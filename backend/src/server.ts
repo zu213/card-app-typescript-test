@@ -12,10 +12,10 @@ server.get<{ Reply: Entry[] }>("/get/", async (req, reply) => {
   reply.send(dbAllEntries);
 });
 
-server.get<{ Reply: Entry[]; Params: { id: string } }>(
+server.get<{ Body: Entry; Params: { id: string } }>(
   "/get/:id",
   async (req, reply) => {
-    const dbEntry = await Prisma.entry.findMany({
+    const dbEntry = await Prisma.entry.findUnique({
       where: { id: req.params.id },
     });
     reply.send(dbEntry);
