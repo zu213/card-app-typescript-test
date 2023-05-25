@@ -75,7 +75,7 @@ npm run test
 ```bash
 npm install
 
-npm run dev
+npm start
 ```
 
 To deploy a final build with static files:
