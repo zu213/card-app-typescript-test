@@ -18,6 +18,9 @@ server.get<{ Body: Entry; Params: { id: string } }>(
     const dbEntry = await Prisma.entry.findUnique({
       where: { id: req.params.id },
     });
+    if (!dbEntry) {
+      reply.status(500).send({ msg: `Error finding entry with id ${req.params.id}` });
+    }
     reply.send(dbEntry);
   }
 );
