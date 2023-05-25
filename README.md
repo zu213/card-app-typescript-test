@@ -64,6 +64,11 @@ npm run prisma-setup
 npm start
 ```
 
+To have the backend restart when changes have been made to `.ts`, `.prisma` and `.sql` files:
+
+
+Replace `npm start` with `npm run dev`
+
 To run the tests:
 
 ```bash
