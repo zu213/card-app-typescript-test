@@ -50,6 +50,10 @@ server.delete<{ Params: { id: string } }>("/delete/:id", async (req, reply) => {
 server.put<{ Params: { id: string }; Body: Entry }>(
   "/update/:id",
   async (req, reply) => {
+    let updatedEntryBody = req.body;
+    updatedEntryBody.created_at
+      ? (updatedEntryBody.created_at = new Date(req.body.created_at))
+      : (updatedEntryBody.created_at = new Date());
     try {
       await Prisma.entry.update({
         data: req.body,
