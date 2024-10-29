@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.light-mode {
+  background-color: rgb(214, 210, 210);
+  color: rgb(66, 66, 66);
+}
+
+.dark-mode {
+  background-color: rgb(66, 66, 66);
+  color: rgb(231, 228, 228);
+}
